@@ -1,5 +1,6 @@
 package com.kkwong9.springbootmall.dao;
 
+import com.kkwong9.springbootmall.constant.ProductCategory;
 import com.kkwong9.springbootmall.dto.ProductRequest;
 import com.kkwong9.springbootmall.model.Product;
 
@@ -11,5 +12,5 @@ public interface ProductDao {
     Integer createProduct(ProductRequest productRequest);
     void updateProduct(Integer productId,ProductRequest productRequest);
     void deleteProductById(Integer productId);
-    List<Product> getProducts();
+    List<Product> getProducts(ProductCategory category,String search);
 }
