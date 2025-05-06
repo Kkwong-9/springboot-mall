@@ -2,6 +2,7 @@ package com.kkwong9.springbootmall.service.impl;
 
 import com.kkwong9.springbootmall.constant.ProductCategory;
 import com.kkwong9.springbootmall.dao.ProductDao;
+import com.kkwong9.springbootmall.dto.ProductQueryParams;
 import com.kkwong9.springbootmall.dto.ProductRequest;
 import com.kkwong9.springbootmall.model.Product;
 import com.kkwong9.springbootmall.service.ProductService;
@@ -38,8 +39,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> getProducts(ProductCategory category,String search) {
-        return productDao.getProducts(category,search);
+    public List<Product> getProducts(ProductQueryParams productQueryParams) {
+        return productDao.getProducts(productQueryParams);
     }
 
 }
