@@ -121,8 +121,4 @@ public class ProductDaoImpl implements ProductDao {
 
         return productList;
     }
-//master branch1
-
-//1
-//test branch 2
 }
